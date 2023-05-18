@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jquery ToDo</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+
+    <main>
+
+      <h1>Formulário de cadastro</h1>
+
+
+      <form id="form-cadastro">
+        <label for="name">Nome completo:</label>
+        <input type="text" id="name" name="name" placeholder="Digite seu nome completo" required>
+        
+        <label for="email">Email:</label>
+        <input  type="email" id="email" name="email" placeholder="Digite seu email" required/>
+
+        <label for="number-tel">Numero de telefone:</label>
+        <input  type="tel" id="number-tel" name="number-tel" placeholder="Digite seu numero de telefone" required/>
+
+        <label for="CPF">Informe seu CPF:</label>
+        <input  type="text" id="CPF" name="CPF" placeholder="Digite seu CPF" required/>
+
+        <label for="endereco-completo">Endereço:</label>
+        <input  type="text" id="endereco-completo" name="endereco-completo" placeholder="Digite seu endereço completo" required/>
+        
+        <label for="CEP">Informe seu CEP:</label>
+        <input  type="text" id="CEP" name="CEP" placeholder="Digite seu CEP" required/>
+
+        <button type="submit">Enviar</button>
+      
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="main.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+  
+  
+  <script>
+        
+        $(document).ready(function() {
+  $('#number-tel').mask('(00) 00000-0000');
+  $('#CPF').mask('000.000.000-00');
+  $('#CEP').mask('00000-000');
+});
+
+
+</script>
+
+  </body>
+</html>
